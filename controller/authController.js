@@ -29,7 +29,7 @@ exports.login = (req, res, next) => {
         }
         //jsonWebToken Generation
 
-        const token = jwt.sign({email: loadedUser.email, userId : loadedUser._id.toString()}, process.env.key, {expiresIn: '24h'});
+        const token = jwt.sign({email: loadedUser.email, userId : loadedUser._id.toString()}, process.env.KEY, {expiresIn: '24h'});
        
         res.status(200).json({
             token : token,

@@ -1,7 +1,7 @@
 {
     "env" : {
-        "user" : "muhammad",
-        "password" : "8CqPBacptqUXG3ei",
-        "key" : "7guessitifyouthinkitseasy7"
+        "USER" : "muhammad",
+        "PASSWORD" : "8CqPBacptqUXG3ei",
+        "KEY" : "7guessitifyouthinkitseasy7"
     }
 }

@@ -34,9 +34,9 @@ app.use((error, req, res, next) => {
 });
 
 
- mongoose.connect(`mongodb+srv://${process.env.user}:${process.env.password}@cluster0-vwxyr.mongodb.net/test?retryWrites=true&w=majority`, {useNewUrlParser:true, useUnifiedTopology:true}).then(result => {
+ mongoose.connect(`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@cluster0-vwxyr.mongodb.net/test?retryWrites=true&w=majority`, {useNewUrlParser:true, useUnifiedTopology:true}).then(result => {
 
-app.listen(4000, ()=> console.log('App running...'));
+app.listen(process.env.PORT || 4000, ()=> console.log('App running...'));
 }).catch(err =>{
     console.log('cant connect to mongoose')
 });
